@@ -18,13 +18,67 @@ projSWEREF <- "+init=epsg:3006"
 
 
 
-b1<-raster("C:/satellite_data/b1_north_sweden_1987.tif")
-b2<-raster("C:/satellite_data/b2_north_sweden_1987.tif")
-b3<-raster("C:/satellite_data/b3_north_sweden_1987.tif")
-b4<-raster("C:/satellite_data/b4_north_sweden_1987.tif")
-b5<-raster("C:/satellite_data/b5_north_sweden_1987.tif")
-b6<-raster("C:/satellite_data/b6_north_sweden_1987.tif")
-b7<-raster("C:/satellite_data/b7_north_sweden_1987.tif")
+# b1<-raster("C:/satellite_data/b1_north_sweden_1987.tif")
+# b2<-raster("C:/satellite_data/b2_north_sweden_1987.tif")
+# b3<-raster("C:/satellite_data/b3_north_sweden_1987.tif")
+# b4<-raster("C:/satellite_data/b4_north_sweden_1987.tif")
+# b5<-raster("C:/satellite_data/b5_north_sweden_1987.tif")
+# b6<-raster("C:/satellite_data/b6_north_sweden_1987.tif")
+# b7<-raster("C:/satellite_data/b7_north_sweden_1987.tif")
+
+b1a<-raster("D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b1_north_sweden_1987-0000000000-0000000000.tif")
+b1b<-raster("D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b1_north_sweden_1987-0000065536-0000000000.tif")
+b1<-merge(b1a,b1b)
+writeRaster(b1,file="D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b1_1987.tif",format="GTiff",overwrite=T)
+
+
+b2a<-raster("D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b2_north_sweden_1987-0000000000-0000000000.tif")
+b2b<-raster("D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b2_north_sweden_1987-0000065536-0000000000.tif")
+b2<-merge(b2a,b2b)
+writeRaster(b2,file="D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b2_1987.tif",format="GTiff",overwrite=T)
+
+b3a<-raster("D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b3_north_sweden_1987-0000000000-0000000000.tif")
+b3b<-raster("D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b3_north_sweden_1987-0000065536-0000000000.tif")
+b3<-merge(b3a,b3b)
+writeRaster(b3,file="D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b3_1987.tif",format="GTiff",overwrite=T)
+
+b4a<-raster("D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b4_north_sweden_1987-0000000000-0000000000.tif")
+b4b<-raster("D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b4_north_sweden_1987-0000065536-0000000000.tif")
+b4<-merge(b4a,b4b)
+writeRaster(b4,file="D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b4_1987.tif",format="GTiff",overwrite=T)
+
+b5a<-raster("D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b5_north_sweden_1987-0000000000-0000000000.tif")
+b5b<-raster("D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b5_north_sweden_1987-0000065536-0000000000.tif")
+b5<-merge(b5a,b5b)
+writeRaster(b5,file="D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b5_1987.tif",format="GTiff",overwrite=T)
+
+b6a<-raster("D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b6_north_sweden_1987-0000000000-0000000000.tif")
+b6b<-raster("D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b6_north_sweden_1987-0000065536-0000000000.tif")
+b6<-merge(b6a,b6b)
+writeRaster(b6,file="D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b6_1987.tif",format="GTiff",overwrite=T)
+
+
+b7a<-raster("D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b7_north_sweden_1987-0000000000-0000000000.tif")
+b7b<-raster("D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b7_north_sweden_1987-0000065536-0000000000.tif")
+b7<-merge(b7a,b7b)
+writeRaster(b7,file="D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b7_1987.tif",format="GTiff",overwrite=T)
+
+
+
+
+
+b1<-raster("D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b1_1987.tif")
+b2<-raster("D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b2_1987.tif")
+b3<-raster("D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b3_1987.tif")
+b4<-raster("D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b4_1987.tif")
+b5<-raster("D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b5_1987.tif")
+b6<-raster("D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b6_1987.tif")
+b7<-raster("D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data/b7_1987.tif")
+
+
+
+
+
 
 
 library(dplyr)

@@ -1,11 +1,11 @@
 library(googledrive)
-drive_find()   
+drive_find()    #chose0 
 #satellit images
-2
-setwd("M:/THUF-Fjall/GEE-Harjedalen")
+
+setwd("D:/UMEA/Renbruksplan/lichenmap_1980_2010/satellite_data")
  #choose "2"
 t1<-drive_find()
-files<-grep(".tif",t1$name,value=TRUE)
+files<-grep("1987",t1$name,value=TRUE)
 
 for (i in 1:length(files))
   drive_download(file=files[i],overwrite=TRUE)
